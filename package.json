@@ -1,0 +1,17 @@
+{ 
+  "name": "jsunittesttask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.1"
+
+  }
+ 
+}
