@@ -36,20 +36,3 @@ let newArray = myMap(oldArray, function (value) {
 console.log(newArray);
 module.exports = myMap;
 
-// let oldArray={ 'a': 1, 'b': 2, 'c': 3 }
-// let newArray=oldArray.map(function(value){return value * 2})
-// console.log(newArray);
-
-//There is no native map to the Object object, but how about this:
-//  A lot of people are mentioning that the previous methods do not return a new object, but rather operate on the object itself. For that matter I wanted to add another solution that returns a new object and leaves the original object as it is:
-// Array.prototype.includesObj = function(obj) {
-//     for(let i = 0; i < this.length; i++) {
-//        if(JSON.stringify(this[i], Object.keys(this[i]).sort()) === JSON.stringify(obj, Object.keys(obj).sort())) return true;
-//     }
-//     return false;
-//  }
-
-// else if (list.includesObj()){
-
-//     return "mapp array of object"
-//   }
