@@ -11,22 +11,14 @@ function myMap(list, callback) {
   }else if (!Array.isArray(list)) {
     return "ERROR native map function dont accept object";
   }
-  else {
+  
     let mappedArray = [];
     for (let index in list) {
       mappedArray.push(callback(list[index], index, list));
     }
 
     return mappedArray;
-  }
-
-  // let mappedArray = [];
-  // for (let index in list) {
-  // mappedArray.push(callback(list[index],index,list))
-
-  // }
-
-  // return mappedArray;
+  
 }
 
 let oldArray = [1, 2, 3, 4, 5];

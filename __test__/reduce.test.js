@@ -52,7 +52,7 @@ test('"normal reduce " reduce array into max value ', () => {
   
   test('if we pass empty parameters to filter function  ', () => { 
       
-      expect(myReduce()).toEqual("ERROR theres no callback function and no array  so array couldnt reduced")
+    expect(myReduce()).toEqual('ERROR theres no callback function and no array  so array couldnt reduced')
   
     })
   

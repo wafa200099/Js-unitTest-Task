@@ -12,7 +12,7 @@ function myFilter(list, callback) {
     return "ERROR native filter function dont accept object";
   }
 
-  else{ 
+
     let filteredArray = [];
 
     for (let index in list) {
@@ -23,11 +23,11 @@ function myFilter(list, callback) {
     return filteredArray;}
   
  
-}
 
-// let arr1 = [1, 2, 3, 4, 5,6,8,12];
-// let filterdEven = myFilter(arr1, (element) => element %2== 0);
-// console.log(filterdEven);
+
+let arr1 = [1, 2, 3, 4, 5,6,8,12];
+let filterdEven = myFilter(arr1, (element) => element %2== 0);
+console.log(filterdEven);
 module.exports= myFilter;
 
 

@@ -9,7 +9,7 @@ function myFind (list, callback)  {
       
       }else if (!Array.isArray(list)) {
         return "ERROR native find function dont accept object";
-      }else{
+      }
 
         for (let item of list) {
    
@@ -21,9 +21,9 @@ function myFind (list, callback)  {
         return undefined;
       }
 
-  }
+  
 
-//   let array =[1,2,3,4,5]
-//   let found=myFind(array,element => element > 1)
-//   console.log(found);
+  let array =[1,2,3,4,5]
+  let found=myFind(array,element => element > 1)
+  console.log(found);
 module.exports= myFind;
